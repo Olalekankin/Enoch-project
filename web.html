@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+        .field{
+            color: white;
+            text-decoration: none;
+        }
+        .inline{
+            display: flex;
+            align-items: center;
+            padding-right: 50px;
+            }
+    .padin{
+padding-left: 300px;
+    }
+    .fixed{
+        padding-left: 50px;
+        
+    }
+    .mag{
+        padding-left: 50px;
+    }
+    .but{
+        border-radius: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 15px;
+        padding-left: 15px;
+        color: black;
+    }
+    .diff{
+        text-align: center;
+        padding-top: 100px;
+        font-size: larger;
+    }
+    .font{
+        padding-top: 100px;
+    }
+    .stage{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .second{
+        font-size: larger;
+    }
+    .note{
+        margin-top: 40px;
+        border-radius: 18px;
+        padding: 5px;
+    }
+    .word{
+        padding: 50px;  
+    }
+    .jeez{
+        
+        padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            box-shadow: 3px 4px 5px black;
+    }
+    .mission{
+        text-align: center;
+        padding-top: 70px;
+        font-family: sans-serif;
+    }
+    .height{
+        width: 400px;
+        height: 400px;
+    }
+    .hello{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .more{
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        padding: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    .picture{
+        height: 400px;
+        width: 400px;
+    }
+    .another{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    </style>
+</head>
+<body style="margin: 0%; background-color: black;">
+    <header class="top">
+    <div class="inline">
+        <img style="height:100px;margin-top:-8px" class="mag" alt="Image result for sog logo" id="dimg_5" src="data:image/png;base64,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" data-atf="4" data-frt="0">
+        <a href="" class="field padin">Home</a>
+        <a href="" class="field fixed">Church</a>
+        <a href="" class="field fixed">Community</a>
+        <a href="" class="field fixed">Connect</a>
+        <a href="" class="field fixed">Serve</a>
+    </div>
+    <div class="inline">
+        <button class="but">Join With Us</button>
+    </div>
+    </header>
+    <div class="diff">
+    <h1><p style="color: white;">Recovery Happens</p></h1>
+    <h1><p style="color: white;">every Time With God</p></h1>
+    <h3><p class="font" style="color: white;">Register</p></h3>
+    </div>
+    <div>
+        <div style="background-color: white; height: 800px;" class="stage">
+            <p >About Church</p>
+            <h1><p class="second"> Seek First The Kingdom Of God</p></h1>
+            <img sizes="(max-width: 767px) 100vw, (max-width: 902px) min(100%, 870px), (max-height: 755px) min(100%, 870px), (min-aspect-ratio: 6720/4480) calc((calc(100vh - 175px)) * 1.5), calc(100vw - 32px)" srcset="https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80 870w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80 1170w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80 1470w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80 1740w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80 1770w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80 2070w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2340&amp;q=80 2340w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80 2370w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2670&amp;q=80 2670w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80 2940w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2970&amp;q=80 2970w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3270&amp;q=80 3270w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3540&amp;q=80 3540w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3570&amp;q=80 3570w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3870&amp;q=80 3870w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4140&amp;q=80 4140w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4170&amp;q=80 4170w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4470&amp;q=80 4470w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4740&amp;q=80 4740w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4770&amp;q=80 4770w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5070&amp;q=80 5070w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5340&amp;q=80 5340w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5370&amp;q=80 5370w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5670&amp;q=80 5670w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5940&amp;q=80 5940w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5970&amp;q=80 5970w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=6270&amp;q=80 6270w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=6540&amp;q=80 6540w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=6570&amp;q=80 6570w, https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=6720&amp;q=80 6720w" src="https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="religious concert performed by a band on stage" class="tB6UZ a5VGX" style="aspect-ratio: 6720 / 4480;">     
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus minima odio, nobis facere at aut molestias voluptatem adipisci fugit assumenda unde iusto cupiditate repellat velit tempora quidem porro? Quidem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti consequuntur veritatis dignissimos aliquam quasi voluptate quam odio sunt mollitia neque itaque numquam dolores maxime ratione id, obcaecati iste hic quae!</p>
+            <button class="note">See More</button>
+        </div>
+        </div>
+        <div class="jeez">
+            <div style="background-color: black; height: 40px;" class="word">
+                <p style="color: white;">Reflection</p>
+                <h1><p style="color: white;">GOD's WORD<br/>TODAY</p></h1>
+            </div>
+            <hr style="color: darkgray; height: 400px;"/>
+            <div>
+            <button>June 16,2022</button>
+            <p style="color: white;">For the desire of the flesh is death, but the desire of spirit is life and peace</p>
+            </div>
+        </div>
+        <div>
+        <div class="mission" style="background-color: white; height: 900px;">
+            <p>OUR MISSION</p>
+            <h1><p>Vision and mission about</p></h1>
+            <h1><p>our church</p></h1>
+            <div>
+                <div>
+                <img sizes="(max-width: 767px) 100vw, (max-width: 902px) min(100%, 870px), (max-height: 755px) min(100%, 870px), (min-aspect-ratio: 5760/3840) calc((calc(100vh - 175px)) * 1.5), calc(100vw - 32px)" srcset="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80 870w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80 1170w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80 1470w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80 1740w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80 1770w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80 2070w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2340&amp;q=80 2340w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80 2370w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2670&amp;q=80 2670w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80 2940w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2970&amp;q=80 2970w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3270&amp;q=80 3270w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3540&amp;q=80 3540w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3570&amp;q=80 3570w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3870&amp;q=80 3870w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4140&amp;q=80 4140w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4170&amp;q=80 4170w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4470&amp;q=80 4470w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4740&amp;q=80 4740w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4770&amp;q=80 4770w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5070&amp;q=80 5070w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5340&amp;q=80 5340w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5370&amp;q=80 5370w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5670&amp;q=80 5670w, https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5760&amp;q=80 5760w" src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="people jamming while man singing on stage" class="tB6UZ a5VGX height" style="aspect-ratio: 5760 / 3840;">
+                </div>
+                <p>vision</p>
+                <h3><p class="hello">Become a church based<br/>on the Full Gospel to take<br/>root,grow and bear fruit for christ</p></h3>
+                <button class="more">Learn More</button><br/><br/><br/>
+        </div>
+        <div style="background-color: white;">
+        <img sizes="(max-width: 767px) 100vw, (max-width: 902px) min(100%, 870px), (max-height: 755px) min(100%, 870px), (min-aspect-ratio: 5040/3360) calc((calc(100vh - 175px)) * 1.5), calc(100vw - 32px)" srcset="https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80 870w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80 1170w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80 1470w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80 1740w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80 1770w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80 2070w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2340&amp;q=80 2340w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80 2370w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2670&amp;q=80 2670w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80 2940w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2970&amp;q=80 2970w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3270&amp;q=80 3270w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3540&amp;q=80 3540w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3570&amp;q=80 3570w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3870&amp;q=80 3870w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4140&amp;q=80 4140w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4170&amp;q=80 4170w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4470&amp;q=80 4470w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4740&amp;q=80 4740w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=4770&amp;q=80 4770w, https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=5040&amp;q=80 5040w" src="https://images.unsplash.com/photo-1528828085966-aff4e01c5f2b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="people beside stage" class="tB6UZ a5VGX picture" style="aspect-ratio: 5040 / 3360;">
+        <h3><p>MISSION</p></h3><br/>
+        <h3><p class="another">Building A Christian<br/>Family That Loves And<br/>Serves God And People </p></h3>
+        <button class="more">Learn More</button>
+        <hr/>
+        </div>
+</body>
+</html>
